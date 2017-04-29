@@ -7,6 +7,8 @@ let app = express()
 
 const PORT = 3000
 
+app.use(express.static('public'))
+
 app.get('/', (req, res) => {
   const html = renderToString(React.createElement(App))
   res.send(html)
