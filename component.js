@@ -13,6 +13,7 @@ export default class App extends Component {
           <h1> Hello wolrd </h1>
           <button onClick={() => alert()}>click me</button>
         </div>
+        <script src='/bundle.js' />
       </body>
       </html>
     ) 

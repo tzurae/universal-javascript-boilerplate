@@ -11,6 +11,8 @@ app.use(express.static('public'))
 
 app.get('/', (req, res) => {
   const html = renderToString(React.createElement(App))
+  console.log('html is', html);
+  console.log('html type is', typeof html);
   res.send(html)
 })
 
