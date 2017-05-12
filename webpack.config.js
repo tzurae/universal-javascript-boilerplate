@@ -3,7 +3,7 @@ const { resolve } = require('path')
 module.exports = env => {
 
   const config = {
-    entry: './client.js',
+    entry: './src/client.js',
     output: {
       filename: 'bundle.js',
       path: resolve('public')

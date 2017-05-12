@@ -1,7 +1,6 @@
 0 info it worked if it ends with ok
 1 verbose cli [ '/usr/local/Cellar/node/7.7.2/bin/node',
 1 verbose cli   '/usr/local/bin/npm',
-1 verbose cli   'run',
 1 verbose cli   'start' ]
 2 info using npm@4.1.2
 3 info using node@v7.7.2
@@ -10,7 +9,7 @@
 6 silly lifecycle @~prestart: no script for prestart, continuing
 7 info lifecycle @~start: @
 8 verbose lifecycle @~start: unsafe-perm in lifecycle true
-9 verbose lifecycle @~start: PATH: /usr/local/lib/node_modules/npm/bin/node-gyp-bin:/Users/xiezirui/Project/Ongoing Project/SideProject/universal-javascript-boilerplate/node_modules/.bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/xiezirui/Library/Android/sdk/tools:/Users/xiezirui/Library/Android/sdk/platform-tools:/Users/xiezirui/Library/Android/sdk/tools:/Users/xiezirui/Library/Android/sdk/platform-tools
+9 verbose lifecycle @~start: PATH: /usr/local/lib/node_modules/npm/bin/node-gyp-bin:/Users/xiezirui/Project/Ongoing Project/SideProject/universal-javascript-boilerplate/node_modules/.bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/xiezirui/Library/Android/sdk/tools:/Users/xiezirui/Library/Android/sdk/platform-tools
 10 verbose lifecycle @~start: CWD: /Users/xiezirui/Project/Ongoing Project/SideProject/universal-javascript-boilerplate
 11 silly lifecycle @~start: Args: [ '-c', 'babel-node server.js' ]
 12 silly lifecycle @~start: Returned: code: 1  signal: null
@@ -28,7 +27,7 @@
 15 verbose pkgid @
 16 verbose cwd /Users/xiezirui/Project/Ongoing Project/SideProject/universal-javascript-boilerplate
 17 error Darwin 16.5.0
-18 error argv "/usr/local/Cellar/node/7.7.2/bin/node" "/usr/local/bin/npm" "run" "start"
+18 error argv "/usr/local/Cellar/node/7.7.2/bin/node" "/usr/local/bin/npm" "start"
 19 error node v7.7.2
 20 error npm  v4.1.2
 21 error code ELIFECYCLE
