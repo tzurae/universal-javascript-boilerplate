@@ -2,6 +2,7 @@ import express from 'express'
 import { renderToString } from 'react-dom/server';
 import React from 'react'
 import App from './component'
+import Router from 'universal-router'
 
 let app = express()
 
@@ -9,11 +10,20 @@ const PORT = 3000
 
 app.use(express.static('public'))
 
-app.get('/', (req, res) => {
-  const html = renderToString(React.createElement(App))
-  console.log('html is', html);
-  console.log('html type is', typeof html);
-  res.send(html)
+let routes = {
+  path: '/',
+  async action () {
+    return <App />
+  },
+}
+
+let router = new Router(routes)
+
+app.use((req, res) => {
+  router.resolve({path:'/'}).then((comp) => {
+    const html = renderToString(<App />)
+    res.send(html)
+  })
 })
 
 app.listen(PORT,() => {
